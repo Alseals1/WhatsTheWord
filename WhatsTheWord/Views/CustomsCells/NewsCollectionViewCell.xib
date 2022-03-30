@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCollectionViewCell" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="WhatsTheWord" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-dK-YLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-XZ-9vr">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="MHO-RP-yQE"/>
+                                    <constraint firstAttribute="height" constant="350" id="qIh-Bx-7dp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Good in America" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jw0-CT-Yqb">
+                                <rect key="frame" x="8" y="8" width="280" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="997" constant="50" id="E56-nM-rHT"/>
+                                    <constraint firstAttribute="width" constant="280" id="RXW-sS-PLX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-1" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by: Alandis Seals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-m0-VVv">
+                                <rect key="frame" x="15" y="63" width="270" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="56M-Z9-D1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gHA-XZ-9vr" secondAttribute="bottom" id="4gu-2w-KfY"/>
+                            <constraint firstItem="gHA-XZ-9vr" firstAttribute="leading" secondItem="7Ho-dK-YLQ" secondAttribute="leading" id="5kl-HK-uMB"/>
+                            <constraint firstAttribute="trailing" secondItem="gHA-XZ-9vr" secondAttribute="trailing" id="7io-Yx-KQS"/>
+                            <constraint firstItem="jw0-CT-Yqb" firstAttribute="top" secondItem="7Ho-dK-YLQ" secondAttribute="top" constant="8" id="JpQ-pk-oLf"/>
+                            <constraint firstItem="gHA-XZ-9vr" firstAttribute="top" secondItem="7Ho-dK-YLQ" secondAttribute="top" id="TiO-2R-gGa"/>
+                            <constraint firstItem="KY5-m0-VVv" firstAttribute="leading" secondItem="7Ho-dK-YLQ" secondAttribute="leading" constant="15" id="hwF-L0-nz0"/>
+                            <constraint firstItem="KY5-m0-VVv" firstAttribute="top" secondItem="jw0-CT-Yqb" secondAttribute="bottom" constant="5" id="oum-si-Fjs"/>
+                            <constraint firstItem="jw0-CT-Yqb" firstAttribute="leading" secondItem="7Ho-dK-YLQ" secondAttribute="leading" constant="8" id="wJn-wj-FRK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="7Ho-dK-YLQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="08h-KX-c62"/>
+                <constraint firstAttribute="bottom" secondItem="7Ho-dK-YLQ" secondAttribute="bottom" id="36E-hz-bW5"/>
+                <constraint firstAttribute="trailing" secondItem="7Ho-dK-YLQ" secondAttribute="trailing" id="7Xt-cf-oGY"/>
+                <constraint firstItem="7Ho-dK-YLQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M37-lL-QdS"/>
+            </constraints>
+            <size key="customSize" width="306" height="315"/>
+            <connections>
+                <outlet property="newsAuthorLbl" destination="KY5-m0-VVv" id="gu0-a2-Rnc"/>
+                <outlet property="newsCellView" destination="7Ho-dK-YLQ" id="eSH-6G-0ii"/>
+                <outlet property="newsImage" destination="gHA-XZ-9vr" id="YgZ-bt-6k4"/>
+                <outlet property="newsTitleLbl" destination="jw0-CT-Yqb" id="hoj-FS-NQq"/>
+            </connections>
+            <point key="canvasLocation" x="320.28985507246381" y="184.15178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="one" width="136" height="174"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
